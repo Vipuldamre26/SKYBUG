@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root{
+    --red: rgb(255, 92, 51);
+}
+
 body{
     width: 100%;
     height: 100Vh;
@@ -13,6 +17,7 @@ body{
 main{
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 nav{
@@ -21,6 +26,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #fff;
 }
 
 nav .logo{
@@ -75,6 +81,12 @@ nav .navitems ul li a{
 }
 
 
+
+
+
+
+
+
 /* hero section  */
 
 .section1{
@@ -90,6 +102,7 @@ nav .navitems ul li a{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba(0, 60, 255, 0.555);
 }
 
 
@@ -110,13 +123,354 @@ nav .navitems ul li a{
 }
 
 .hero-content{
-    width: 60%;
+    width: 68%;
     height: auto;
+    letter-spacing: 3px;
 }
 
-h1{
-    font-size: 5rem;
+.hero-content h1{
+    font-size: 4.2rem;
     position: relative;
     color: #ffffff;
     text-align: center;
+}
+
+.hero-content p{
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.hero-section .hero-content .btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+}
+
+.hero-section .hero-content button{
+    color: white;
+    position: relative;
+    height: 7vmin;
+    width: 24vmin;
+    border-radius: 5rem;
+    font-size: 1.2rem;
+    border: none;
+    font-weight: 400;
+    margin: 0 1.4vmin;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;0
+}
+
+.hero-section .hero-content .btn .btn1{
+    background-color: var(--red);
+}
+
+.hero-section .hero-content .btn .btn1:hover{
+    background-color: rgb(255, 132, 102);
+    color: black;
+    transition: color 600ms linear, background-color 600ms linear;
+}
+
+.hero-section .hero-content .btn .btn2{
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+/* article  */
+
+
+article{
+    width: 100%;
+    display: flex;
+}
+
+article .article1{
+    width: 50%;
+    height: 76vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(235, 235, 235);
+}
+
+article .article2{
+    width: 50%;
+    height: 76vmin;
+    background-color: var(--red);
+}
+
+article .article1 .article1-content{
+    width: 80%;
+    height: 70%;
+    
+
+}
+
+article .article1 .article1-content h2{
+    font-size: 5.5vmin;
+    margin: 3vmin 0;
+}
+
+article .article1 .article1-content h2 span{
+    color: var(--red);
+}
+
+article .article1 .article1-content h4{
+    font-size: 2.8vmin;
+    color:var(--red);
+    margin:1rem 0rem;;
+}
+
+
+
+
+article .article1 .article1-content .btn button
+{
+    height: 3.5rem;
+    width:12rem;
+    background-color:var(--red);
+    border-radius:5rem;
+    border:none;
+    color:white;
+    font-size:1.2rem;
+    display:flex;
+    justify-content:center;
+    cursor: pointer;
+    align-items: center;
+    
+}
+
+
+article .article1 .article1-content .btn button:hover
+{
+    background-color: rgb(255, 132, 102);
+    color: black;
+    transition: color 600ms linear, background-color 600ms linear;
+
+}
+
+article .article2{
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+article .article2 .article2-content{
+    width:85%;
+    height:80%;
+} 
+article .article2 .article2-content .content-item{
+    display:flex;
+    margin: 3rem 0rem;
+}
+
+
+article .article2 .article2-content .content-item .content-logo i{
+ 
+    height:3rem;
+    width:3rem;
+    background-color: white;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--red);
+    font-size:1.4rem;
+    font-weight:900;
+
+
+} 
+
+article .article2 .article2-content .content-item .side-content h5{
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+    margin-left: 1rem;
+
+
+}
+
+article .article2 .article2-content .content-item .side-content p{
+    
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    color:white;
+
+
+} 
+
+
+
+
+/* Connect Section */
+
+
+.connect{
+    width:100%;
+    display: flex;
+}
+
+.connect .connect-section1{
+    width:50%;
+    height:90vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(206, 206, 206);
+}
+
+.connect .connect-section1 .connect-section1-content{
+    width: 85%;
+}
+
+.connect .connect-section1 h2{
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem 0rem;
+}
+
+.connect .connect-section1 p{
+    font-size:1.2rem;
+    line-height:1.8rem;
+    margin: 2rem 0rem;
+    text-align:justify;
+}
+
+.connect .connect-section2{
+    width:50%;
+    height:90vmin;
+    box-sizing: border-box;
+}
+
+.connect .connect-section2 img{
+    width:100%;
+    height:100%;
+}
+
+
+.connect .connect-section1 .connect-section1-content form{
+    width:100%;
+}
+
+
+.connect .connect-section1 .connect-section1-content input,select,button{
+    width:46%;
+    height:10vmin;
+    padding: 3vmin;
+    margin: 1vmin;
+    border-radius: 8px;
+    font-size: 2.4vmin;
+}
+
+.connect .connect-section1 .connect-section1-content input,select{
+    border: none;
+}
+
+.connect .connect-section1 .connect-section1-content button{
+    border: none;
+    background-color: var(--red);
+    color: white;
+    cursor: pointer;
+
+}
+
+
+.connect .connect-section1 .connect-section1-content button:hover
+{
+    background-color: rgb(255, 132, 102);
+    color: black;
+    transition: color 600ms linear, background-color 600ms linear;
+
+}
+
+
+
+
+/* footer  */
+
+
+footer{
+    width: 100%;
+}
+
+.footer-section1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 14vmin;
+    background-color: rgb(1, 36, 53);
+    color: white;
+}
+
+.footer-section1 .footer-item1, .footer-item2, .footer-item3{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 4vmin;
+    
+}
+
+.footer-section1 .footer-item1 ul{
+    text-align: right;
+}
+
+.footer-section1 .footer-item1 ul li{
+    list-style: none;
+    text-align: start;
+    margin: 2vmin 1vmin;
+}
+
+.footer-section1 .footer-item2 ul li{
+    list-style: none;
+    text-align: start;
+    margin: 2vmin 1vmin;
+}
+
+.footer-section1 .footer-item2 ul li i{
+    margin: 0 1vmin;
+}
+
+.footer-section1 .footer-item3 .media{
+    display: flex;
+}
+
+.footer-section1 .footer-item3 .fa-brands{
+    height: 8vmin;
+    width: 8vmin;
+    border-radius: 50%;
+    background-color: var(--red);
+    margin: 1.2vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+}
+
+.footer-section2{
+    background-color: rgb(1, 36, 53);
+    height: 10vmin;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-section2 p a{
+    color: rgb(255, 255, 255);
+}
+
+.footer-section2 p span{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
 }
