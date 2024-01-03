@@ -1,10 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
     margin: 0px;
     margin-left: 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .navbar{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(231, 249, 249, 0.968);
+}
+
+
+.navbar .nav-resume{
+    width: 15vmin;
+    margin-right: 4vmin;
+}
+
+.navbar .nav-resume a{
+    display: inline-block;
+    width: 90%;
+    text-decoration: none;
+    color: white;
+    height: 5vmin;
+    background-color: rgb(112, 205, 202);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.navbar .nav-resume a:hover{
+    background-color: black;
+}
+
+
+.navbar .nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
     background-color: rgba(231, 249, 249, 0.968);
 }
@@ -47,8 +88,26 @@ body{
     background-color: rgba(245, 250, 252, 0.968);
 }
 
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profile h2{
+    margin: 3vmin 0;
+}
+
 .profile p{
     line-height: 2;
+    width: 60%;
+    text-align: justify;
+    margin: 3vmin 0;
+}
+
+p{
+    letter-spacing: 0.2vmin;
 }
 
 .top-c{
@@ -128,6 +187,8 @@ h1, h2, h3{
 
 .skill-row p{
     margin-bottom: 40px;
+    text-align: justify;
+    margin: 3vmin 1vmin;
 }
 
 .code .code-img{
@@ -148,11 +209,43 @@ h1, h2, h3{
     color: black;
 }
 
+.resume-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resume{
+    height: 5vmin;
+    width: 18vmin;
+    background-color:rgb(67, 192, 187) ;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 6vmin 2vmin;
+}
+
+.resume:hover a{
+    color:rgb(0, 0, 0);
+}
+
+.resume a {
+    text-decoration: none;
+    color: white;
+}
+
 .contact-me{
     width: 50%;
     margin: 100px auto 0px auto;
     padding-bottom: 40px;
     line-height: 2;
+}
+
+.contact-me p{
+    margin: 3vmin 0vmin;
 }
 
 .footer-link{
@@ -179,4 +272,7 @@ hr{
 .hr hr{
     background-color: rgba(245, 250, 252, 0.968);
     margin: 0px auto 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
